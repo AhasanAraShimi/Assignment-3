@@ -18,6 +18,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+<!--CSS link-->
+<link rel="stylesheet" href="style.css">
+
+
 <!--Font Awesome CDN-->
 <script src="https://kit.fontawesome.com/78ba6c1d9c.js" crossorigin="anonymous"></script>
 
@@ -30,6 +34,7 @@
 .sora-font{
   font-family: "Sora", serif;
   }
+
 
 </style>
 <script>
@@ -48,9 +53,9 @@
 </head>
 <body >
  <header>
-  <nav class="flex sm:justify-around justify-between bg-[#FFF9F4] py-5 px-3 items-center">
+  <nav class="flex sm:justify-around justify-between bg-[#FFF9F4] py-5 px-3 items-center mb-16 sora-font">
 <!--Logo-->
-  <div class="flex items-center space-x-3"><img src="assets/logo-header.png" alt=""> 
+  <div class="flex items-center space-x-3"><img src="images/logo-header.png" alt=""> 
     <h2 class="hidden sm:block text-[26px] ">Browse<span class="text-secondary">4</span>Pets</h2>
   </div>
 
@@ -105,12 +110,20 @@
   
   <!--Banner Section-->
   <section class="w-10/12 mx-auto">
-    <div class="max-w-full bg-[url(./images/cat-big.png)] min-h-[750px] bg-contain bg-center bg-no-repeat">
-      <div>
-        <h1>Pamper Your Pet, Because They Deserve the Bes</h1>
-        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-        <button>Find a pet</button>
+    <div class="max-w-full bg-[url(./images/cat-big.png)] min-h-[750px] bg-contain bg-center bg-no-repeat flex ">
+
+
+      <div class="sm:max-w-[670px] max-w-[360px] space-y-4">
+        <h1 class="text-3xl sm:text-[56px] sm:leading-[73px] adlam-display">Pamper Your Pet, Because They Deserve the Bes</h1>
+        <p class="text-base sm:text-xl ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+        <button class="text-base sm:text-xl text-black px-12 border-solid border-[1px] bg-secondary rounded-lg py-3 sora-font">Find a pet</button>
       </div>
+
+      <!--Animation-->
+     <div>
+      <button class="mb-5 transition-delay-1000 cursor-pointer animate-pulse max-w-[400px] m-6"><img src="images/R-removebg-preview.png" alt="" class="w-full"></button>
+     </div>
+     
 
     </div>
 
